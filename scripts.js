@@ -27,32 +27,40 @@ const STATUS_MAP = {
 
 // Edit below line 
 
-status = document.querySelector(".status").getAttributeNames(status)
-console.log(typeof status)
+let book1 = document.getElementById('book1')
+console.log(book1)
 
-reserve= document.querySelector(".reserve");
-checkout = document.querySelector(".checkout");
-checkin= document.querySelector(".checkin");
+let status1 = book1.querySelector(".status").getAttributeNames('status');
+console.log(status1)
+let reserve1 = book1.querySelector(".reserve").getAttributeNames('reserve');
+let checkout1 = book1.querySelector(".checkout").getAttributeNames('checkout');
+let checkin1 = book1.querySelector(".checkin").getAttributeNames('checkin');
 
-status = document.querySelector(".status");
-console.log(status)
-reserve= document.querySelector(".reserve");
-checkout= document.querySelector(".checkout");
-checkin= document.querySelector(".checkin");
+let book2 = document.getElementById('book2')
+console.log(book2)
 
-status= document.querySelector(".status");
-console.log(status)
-reserve= document.querySelector(".reserve");
-checkout = document.querySelector(".checkout");
-checkin= document.querySelector(".checkin");
+let status2 = book2.querySelector(".status").getAttributeNames('status'); 
+console.log(status2);
+let reserve2 = book2.querySelector(".reserve").getAttributeNames('reserve');
+let checkout2 = book2.querySelector(".checkout").getAttributeNames('checkout');
+let checkin2 = book2.querySelector(".checkin").getAttributeNames('checkin');
 
-checkin.color = none;
-status[0].style.color = STATUS_MAP.status.color;
-reserve[0]= STATUS_MAP.status.canReserver ? 'enabled' : 'disabled';
-checkout[0] = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled';
-checkin[0] = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled';
+let book3 = document.getElementById('book3')
+console.log(book3)
 
-checkin[1].color = none;
+let status3 = book3.querySelector(".status").getAttributeNames('status');
+console.log(status3)
+let reserve3 = book3.querySelector(".reserve").getAttributeNames('reserve');
+let checkout3 = book3.querySelector(".checkout").getAttributeNames('checkout');
+let checkin3 = book3.querySelector(".checkin").getAttributeNames('checkin');
+
+checkin1 = none;
+status1[0][1] = 'red';
+reserve1= STATUS_MAP.status.canReserver ? 'enabled' : 'disabled';
+checkout1 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled';
+checkin1 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled';
+
+/*checkin[1].color = none;
 status[1].style.color = STATUS_MAP.status.color
 reserve[1] = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled';
 checkout[1] = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled';
@@ -62,4 +70,4 @@ checkin[2].color = none
 status[2].style.color = STATUS_MAP.status.color
 reserve[2] = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled';
 checkout[2] = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled';
-checkin[2] = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled';
+checkin[2] = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled';*/

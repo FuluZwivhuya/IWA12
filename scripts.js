@@ -25,49 +25,41 @@ const STATUS_MAP = {
     }
 }
 
-// Edit below line 
+// Edit below line
+statuz = document.getElementsByClassName('status');
+console.log(statuz);
 
-let book1 = document.getElementById('book1')
-console.log(book1)
+/*statuz[0].style.color = STATUS_MAP.overdue.color;
+statuz[1].style.color = STATUS_MAP.reserved.color;
+statuz[2].style.color = STATUS_MAP.shelf.color;*/
 
-let status1 = book1.querySelector(".status").getAttributeNames('status');
-console.log(status1)
-let reserve1 = book1.querySelector(".reserve").getAttributeNames('reserve');
-let checkout1 = book1.querySelector(".checkout").getAttributeNames('checkout');
-let checkin1 = book1.querySelector(".checkin").getAttributeNames('checkin');
+checkinz = document.getElementsByClassName('checkin')
+console.log(checkinz)
+/*checkinz[0].style.color = 'black';
+checkinz[1].style.color = 'black';
+checkinz[2].style.color = 'black';*/
 
-let book2 = document.getElementById('book2')
-console.log(book2)
+reservez = document.getElementsByClassName('reserve')
+console.log(reservez)
+checkoutz = document.getElementsByClassName('checkout')
+console.log(checkoutz)
 
-let status2 = book2.querySelector(".status").getAttributeNames('status'); 
-console.log(status2);
-let reserve2 = book2.querySelector(".reserve").getAttributeNames('reserve');
-let checkout2 = book2.querySelector(".checkout").getAttributeNames('checkout');
-let checkin2 = book2.querySelector(".checkin").getAttributeNames('checkin');
+checkinz[0].style.color = 'black';
+statuz[0].style.color = STATUS_MAP.overdue.color;
+//reservez[0]= STATUS_MAP.status.canReserver ? 'enable':'disabled';
+//checkoutz[0] = STATUS_MAP.status.canCheckout ? 'disabled' : 'disabled';
+//checkinz[0]= STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled';
 
-let book3 = document.getElementById('book3')
-console.log(book3)
+checkinz[1].style.color = 'black';
+statuz[1].style.color = STATUS_MAP.reserved.color;
+//reservez[1] = STATUS_MAP.status.canReserver ? 'disbaled' : 'disabled';
+//checkoutz[1] = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled';;
+//checkinz[1] = STATUS_MAP.status.canCheckIn ? 'disabled' : 'disabled'
 
-let status3 = book3.querySelector(".status").getAttributeNames('status');
-console.log(status3)
-let reserve3 = book3.querySelector(".reserve").getAttributeNames('reserve');
-let checkout3 = book3.querySelector(".checkout").getAttributeNames('checkout');
-let checkin3 = book3.querySelector(".checkin").getAttributeNames('checkin');
+checkinz[2].style.color = 'black';
+statuz[2].style.color = STATUS_MAP.shelf.color;
+//reservez[2] = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled';
+//checkout[2] = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled';
+//checkinz[2] = STATUS_MAP.status.canCheckIn ? 'disbaled' : 'disabled';
 
-checkin1 = none;
-status1[0][1] = 'red';
-reserve1= STATUS_MAP.status.canReserver ? 'enabled' : 'disabled';
-checkout1 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled';
-checkin1 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled';
 
-/*checkin[1].color = none;
-status[1].style.color = STATUS_MAP.status.color
-reserve[1] = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled';
-checkout[1] = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled';
-checkin[1] = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled';
-
-checkin[2].color = none
-status[2].style.color = STATUS_MAP.status.color
-reserve[2] = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled';
-checkout[2] = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled';
-checkin[2] = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled';*/
